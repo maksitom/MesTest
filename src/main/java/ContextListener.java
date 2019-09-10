@@ -32,7 +32,7 @@ public class ContextListener implements ServletContextListener {
         log.debug("Test mes");
         Map<Future, Future> map = new HashMap<>();
         try {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 2; i++) {
                 Future<?> future = testMes.getMes().submit(() -> {
                     log.debug("submit");
                 });
